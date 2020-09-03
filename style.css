@@ -1,0 +1,84 @@
+:root {
+    --grid-cols: 16;
+    --grid-rows: 16;
+    --pen-color: black;
+}
+
+body {
+    background: url("drawing.jpg") no-repeat center fixed;
+    background-size: cover;
+}
+
+.header {
+    display: flex;
+    width: 300px;
+    height: 100px;
+    padding: 40px;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: grid;
+    margin:auto;
+    height: 450px;
+    width: 450px;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+    border: .1px solid black;
+}
+
+.grid{
+    background-color: transparent;
+    border: .1px solid black; 
+}
+
+.draw{
+    background-color: var(--pen-color);
+}
+
+.erase{
+    background-color: transparent;
+}
+
+h1{
+    font-size: 45px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #3b3a30;
+}
+
+p {
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #3b3a30;
+}
+
+button {
+    background: transparent;
+    border: 2px solid #3b3a30;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    margin: 15px;
+    padding: 15px;
+    display: inline-block;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 100px;
+    color: #3b3a30;
+    margin-top: -5px;
+    margin-bottom: 25px;
+}
+
+button:hover{
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+}
+
+button:focus{
+    outline: none;
+}
+
+
